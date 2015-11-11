@@ -8,10 +8,10 @@ class BossFile:
         self.f = open(filename, mode)
         self.purpose = purpose
 
-    def write(self, string):
+    def lwrite(self, string):
         self.f.write(string)
 
-    def close(self):
+    def lclose(self):
         self.f.close()
         lackey = open(self.filename + ".lackey", 'w')
         date = dt.now()
